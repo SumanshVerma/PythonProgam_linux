@@ -2,6 +2,7 @@ import os
 import subprocess
 
 
+
 def networkinfo():
     subprocess.call(["ifconfig"])
 
@@ -17,8 +18,13 @@ def removedir():
 def ramusage():
     subprocess.call(["top"])
 
-# def adduser(): // Next function to add 
-    subprocess.call("")
+def adduser():
+    username = input("Enter Directory Name")
+    subprocess.call(["Sudo","useradd",username])
+
+def deleteuser():
+    Deletedir = input("Enter directory to delete")
+    subprocess.call(["userdel",Deletedir])
 
 
 def main():
@@ -40,7 +46,7 @@ def main():
             ramusage()
 
         elif key =='6':
-            adduser()    
+            adduser()
 
         elif key == 'e':  # If you want to quit on 'q'
             print("Exiting program.")
