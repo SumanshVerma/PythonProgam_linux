@@ -1,7 +1,6 @@
 import os
 import subprocess
-
-
+import psutil
 
 def networkinfo():
     subprocess.call(["ifconfig"])
@@ -19,12 +18,12 @@ def ramusage():
     subprocess.call(["top"])
 
 def adduser():
-    username = input("Enter Directory Name")
+    username = input("Enter User Name")
     subprocess.call(["Sudo","useradd",username])
 
 def deleteuser():
-    Deletedir = input("Enter directory to delete")
-    subprocess.call(["userdel",Deletedir])
+    Deletedir = input("Enter User to delete")
+    subprocess.call(["Sudo","userdel",Deletedir])
 
 
 def main():
@@ -50,7 +49,7 @@ def main():
         
         elif key =='7':
             deleteuser()
-            
+
         elif key == 'e':  # If you want to quit on 'q'
             print("Exiting program.")
             break
