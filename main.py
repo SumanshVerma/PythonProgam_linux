@@ -47,7 +47,10 @@ def main():
 
         elif key =='6':
             adduser()
-
+        
+        elif key =='7':
+            deleteuser()
+            
         elif key == 'e':  # If you want to quit on 'q'
             print("Exiting program.")
             break
