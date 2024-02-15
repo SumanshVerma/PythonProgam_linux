@@ -12,7 +12,7 @@ def makedir():
     subprocess.call(["mkdir","testsumansh"])
 
 def removedir():
-    subprocess.call(["rm","testsumansh"])
+    subprocess.call(["rmdir","testsumansh"])
 
 def ramusage():
     subprocess.call(["top"])
