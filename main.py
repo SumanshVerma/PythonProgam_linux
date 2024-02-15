@@ -17,7 +17,7 @@ def removedir():
 def ramusage():
     subprocess.call(["top"])
 
-def adduser():
+# def adduser(): // Next function to add 
     subprocess.call("")
 
 
