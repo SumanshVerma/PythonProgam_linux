@@ -33,7 +33,8 @@ def deleteuser():
 
 def main():
     while True:
-        key = input("Press a number key (1-8): ")
+        key = input ("Enter Digits from (1-8) : 1. Network Information \n 2. DiskUsage \n 3. Make a new Directory \n 4. Delete a Directory \n 5. RAM Usage \n 6. Add a new user \n 7. Delete a user \n E to exit")
+
         if key == '1':
             networkinfo()
         
