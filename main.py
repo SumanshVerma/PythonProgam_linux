@@ -14,7 +14,7 @@ def makedir():
     subprocess.call(["mkdir",directory_name])
 
 def removedir():
-    directory_name = input("Enter the name of directory to be created : ")
+    directory_name = input("Enter the name of directory to be removed : ")
     subprocess.call(["rmdir",directory_name])
 
 def ramusage():
