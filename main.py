@@ -1,3 +1,4 @@
+from getpass import getpass
 import os
 import subprocess
 import psutil
@@ -19,7 +20,8 @@ def ramusage():
 
 def adduser():
     username = input("Enter User Name")
-    subprocess.call(["Sudo","useradd",username])
+    password = getpass.getpass()
+    subprocess.run(['useradd', '-p', password, username ])
 
 def deleteuser():
     Deletedir = input("Enter User to delete")
