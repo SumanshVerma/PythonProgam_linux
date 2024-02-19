@@ -11,13 +11,15 @@ def diskusage():
     subprocess.call(["df"])
 
 def makedir():
-    subprocess.call(["mkdir","testsumansh"])
+    directory_name = input("Enter the name of directory to be created : ")
+    subprocess.call(["mkdir",directory_name])
 
 def removedir():
-    subprocess.call(["rmdir","testsumansh"])
+    directory_name = input("Enter the name of directory to be created : ")
+    subprocess.call(["rmdir",directory_name])
 
 def ramusage():
-    subprocess.call(["top"])
+    subprocess.call(["free"])
 
 def adduser():
     username = input("Enter User Name : ")
