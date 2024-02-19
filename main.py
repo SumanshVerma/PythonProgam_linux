@@ -2,6 +2,8 @@ from getpass import getpass
 import os
 import subprocess
 import psutil
+import getpass
+import sys
 
 def networkinfo():
     subprocess.call(["ifconfig"])
