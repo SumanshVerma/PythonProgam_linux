@@ -20,13 +20,13 @@ def ramusage():
     subprocess.call(["top"])
 
 def adduser():
-    username = input("Enter User Name")
+    username = input("Enter User Name : ")
     password = getpass.getpass()
-    subprocess.run(['useradd', '-p', password, username ])
+    subprocess.run(["useradd", '-p', password, username ])
 
 def deleteuser():
-    Deletedir = input("Enter User to delete")
-    subprocess.call(["Sudo","userdel",Deletedir])
+    username = input("Enter User to delete : ")
+    subprocess.call(["userdel",username])
 
 
 def main():
@@ -53,7 +53,7 @@ def main():
         elif key =='7':
             deleteuser()
 
-        elif key == 'e':  # If you want to quit on 'q'
+        elif key == 'e': 
             print("Exiting program.")
             break
         else:
